@@ -14,7 +14,15 @@ const app = express();
 
 // set middleware
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
+
+app.get('/testApi', (req, res) => {
+    console.log('Api called');
+    res.header("Access-Control-Allow-Origin", "*");
+    res.send({
+        message: 'api call successful'
+    })
+})
 
 // when requested, guide where to look for project and load it using loader
 app.use(express.Router().get('/', loader));

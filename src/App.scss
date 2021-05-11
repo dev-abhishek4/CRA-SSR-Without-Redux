@@ -10,16 +10,27 @@
     a {
       text-decoration: none;
       color: #474747;
-      padding: 10px 0;
+      padding: 10px;
       margin: 0 20px;
       width: 120px;
+      height: 60px;
       border: 2px solid coral;
       transition: all 0.5s;
+      text-align: left;
     }
 
     .active {
       background-color: coral;
       color: white;
     }
+  }
+
+  button {
+    width: 140px;
+    height: 40px;
+    border: 2px solid blue;
+    color: blue;
+    font-size: 1.2rem;
+    margin: 10px;
   }
 }
